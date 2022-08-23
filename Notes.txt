@@ -1,0 +1,30 @@
+// React JS course
+
+1. React ke andar do tarah ke componenets hote hain ek fucntion based and class based components 
+currentluy fucntion based components are used logo ko aasan lagte hain 
+yaha pe ek function likhna hain and return kar dena hain ek JSX 
+
+2. thode bohot changes hain like
+class -> className 
+for   -> htmlFor
+tabIndex 
+
+3. React ke andar jsx mein sirf ek hi element return karna hain 
+
+4. aur agar kkarna hai toh empty tag dalo 
+
+5. closing tags lagane padenge and agar navbar include karna hain to 
+<Navbar />
+<img />
+
+6.  React external html ko nahi leti use as it is print kar deti hain 
+
+7. this jsx is compiled  by the babel down to react.createelement()
+
+{
+    Multi page application mein hota eisa hian ki jo client hota hihain woh server ke pass request dalta hain then waha se html csss and js ke files aatehain ab har page ke liye nayi files aayegi but in the case of multipage application
+
+    single page application mein html css and js ke files toh ek hi bar aayegi but but but uske bad js control apne hat mein le lega like ab wahi sab chize control karegi without reloading pages and same page will be piopulated with the help of apis  
+}
+
+8. node module wala folder deni ki jarurat nahi hain npm install likhne se hi kam chal jata hain sari dependencies auto download ho jayegi
