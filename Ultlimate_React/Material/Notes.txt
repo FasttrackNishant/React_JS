@@ -106,3 +106,43 @@ and fucntion setAlert will set the alert message
 
  props.alert && ise hoga ki aga ye null hain toh dikho mat and agar niahi hain to hdikhao 
  lekin props.alert.type pass karke humne color badle and then success ko capital karna hain to ..ek fucntion banaya
+
+ #favicon ab favicon lane ke liye ek png file ko name do and public folder mein sent karke sabko name replace kardo ho gaya
+
+ -> ab agar title change karna hian alga alag components ke liye toh 
+
+ -> set Interval is used to pop up certain thing again and again
+
+
+ -> React Router ka Setup
+ The basic idea is to bring the entire page instead of that required data we should bring only that data is the concept behind this like youtube 
+
+ steps :-
+ 
+ search React Router Dom  
+ copy router then switch and customize accorginly
+ then ab router mein switch ko close karo 
+ and one warning switch hain na woh outdata ho gaya hian so old version of react-router-dom install karo 
+
+ now click karte hi jana chahiye uske liye kya kare
+ link too use karo
+ ab HTML mein a to Link and to se replace kardo
+ and router mein exact use karo to match exact
+ why
+ /users
+ /users/home
+
+ ab users mara toh possiblity hain ki react users mein render ho jayega so exact matching is important
+
+ ->>
+ Ab ise deploy karte hai so
+ write deployment of create react app on the net
+
+npm run build run karo pehle toh
+aur ye gh pages mein router thik se kam nahi karta so hum about page ko remove kar denge
+
+
+-~~~~~~~~~~~~~~~~
+
+#New Module :-
+React class based components

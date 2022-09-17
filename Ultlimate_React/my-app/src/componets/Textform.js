@@ -37,13 +37,17 @@ export default function Textform(props) {
 
         let data = document.getElementById("myBox")
         data.value = "";
+        props.showAlert("Data Cleared", "success");
+       
+        
+
 
     }
     const removeSpaces = () => {
 
         let newText = text.split(/[ ]+/)
         setText(newText.join(" "));
-
+props.showAlert("Extra Spaces Removed", "success");
 
     }
     const [text, setText] = useState('');
@@ -79,7 +83,7 @@ export default function Textform(props) {
                 <p>Minutes to Read the words :- {0.008 * text.split(" ").length}</p>
                 <h3>Preview :-</h3>
                 <p>{text.length > 0 ? text : "Type Something to Preview"}</p>
-
+ 
             </div>
 
         </>)
