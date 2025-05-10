@@ -1,0 +1,210 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.header{
+  font-family: 'Be Vietnam Pro', sans-serif;
+  margin: 0;
+}
+
+.navbar{
+  padding: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  background: rgba(18, 180, 255, 0.486);
+  border: none;
+  padding: 1rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(14.8px);
+  -webkit-backdrop-filter: blur(14.8px);
+}
+.contact-single{
+ 
+  padding: 1rem;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  border-bottom: 0.01rem solid rgb(75, 174, 255);
+  transition: all 0.7s;
+}
+.contact-single:hover{
+padding: 1rem;
+background: rgba(18, 180, 255, 0.486);
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  border-bottom: 0.01rem solid rgb(60, 60, 63);
+  transition: all 0.7s;
+}
+.deletelogo{
+  width: 35px;
+  transition: all 0.3s;
+}
+.deletelogo:hover{
+  width: 37px;
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input{
+  width: 15rem;
+  height: 1.5rem;
+  padding: 0.1rem 1rem 0.1rem 1rem;
+}
+
+.addbtn{
+  background-color: rgb(0, 102, 255);
+  border: 0.1rem solid rgb(0, 102, 255);
+  border-radius: 0.2rem;
+  padding: 0.3rem 1rem 0.3rem 1rem;
+  color: white;
+  transition: all 0.5s;
+  font-weight: bold;
+  width: 10rem;
+  margin-top: 1.5rem;
+}
+.addbtn:active{
+  transform: scale(0.96);
+}
+.addbtn:hover{
+  background-color: rgb(0, 50, 124);
+  border: 0.1rem solid rgb(0, 50, 124);
+  border-radius: 0.2rem;
+  padding: 0.3rem 0.9rem 0.3rem 0.9rem;
+  color: white;
+  transition: all 0.5s;
+  font-weight: bold;
+}
+
+.form-div{
+ 
+  box-shadow: 5px 6px 18px 0px rgba(209,209,209,0.75);
+  -webkit-box-shadow: 5px 6px 18px 0px rgba(209,209,209,0.75);
+  -moz-box-shadow: 5px 6px 18px 0px rgba(209,209,209,0.75);
+  padding: 6rem 5rem;
+  margin-top: 3rem;
+}
+
+
+input{ 
+font-weight: bold;
+}
+
+.contact-main{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0;
+}
+.button-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.contactlist-div{
+  width: 30rem;
+  display: block;
+  margin: 5rem auto;
+  box-shadow: 5px 6px 18px 0px rgba(209,209,209,0.75);
+-webkit-box-shadow: 5px 6px 18px 0px rgba(209,209,209,0.75);
+-moz-box-shadow: 5px 6px 18px 0px rgba(209,209,209,0.75);
+}
+.addcontact-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.logos{
+  display: flex;
+  gap: 2rem;
+}
+.home-img{
+  width: 25rem;
+  transform: translateY(50px);
+  animation: slideUp .8s ease forwards 0.5s;
+}
+.big-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./images/bghome.png");
+  height: 100vh;
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(400px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@media screen and (max-width: 768px){
+  .contactlist-div{
+    width: 23rem;
+    display: block;
+    margin: 1.5rem auto;
+    box-shadow: 5px 6px 18px 0px rgba(209,209,209,0.75);
+  -webkit-box-shadow: 5px 6px 18px 0px rgba(209,209,209,0.75);
+  -moz-box-shadow: 5px 6px 18px 0px rgba(209,209,209,0.75);
+  }
+  .contact-single{
+    padding: 0.2rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.3rem;
+    border-bottom: 0.01rem solid rgb(75, 174, 255);
+    transition: all 0.7s;
+  }
+  .addbtn{
+    background-color: rgb(0, 102, 255);
+    border: 0.1rem solid rgb(0, 102, 255);
+    border-radius: 0.2rem;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    color: white;
+    transition: all 0.5s;
+    font-weight: bold;
+    width: 7rem;
+    margin-top: 1.5rem;
+  }
+  
+
+  .contact-single:hover{
+  padding: 0.2rem;
+  background: rgba(18, 180, 255, 0.486);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.3rem;
+    border-bottom: 0.01rem solid rgb(60, 60, 63);
+    transition: all 0.7s;
+  }
+  .form-div{
+    box-shadow: 5px 6px 18px 0px rgba(209,209,209,0.75);
+    -webkit-box-shadow: 5px 6px 18px 0px rgba(209,209,209,0.75);
+    -moz-box-shadow: 5px 6px 18px 0px rgba(209,209,209,0.75);
+    padding: 6rem 2rem;
+    margin-top: 2rem;
+  }
+  input{
+    height: 2rem;
+    font-size: 1rem;
+  }
+}

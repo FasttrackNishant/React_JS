@@ -1,0 +1,189 @@
+// React JS course
+
+1. React ke andar do tarah ke componenets hote hain ek fucntion based and class based components 
+currentluy fucntion based components are used logo ko aasan lagte hain 
+yaha pe ek function likhna hain and return kar dena hain ek JSX 
+
+2. thode bohot changes hain like
+class -> className 
+for   -> htmlFor
+tabIndex 
+
+3. React ke andar jsx mein sirf ek hi element return karna hain 
+
+4. aur agar kkarna hai toh empty tag dalo 
+
+5. closing tags lagane padenge and agar navbar include karna hain to 
+<Navbar />
+<img />
+
+6.  React external html ko nahi leti use as it is print kar deti hain 
+
+7. this jsx is compiled  by the babel down to react.createelement()
+
+{
+    Multi page application mein hota eisa hian ki jo client hota hihain woh server ke pass request dalta hain then waha se html csss and js ke files aatehain ab har page ke liye nayi files aayegi but in the case of multipage application
+
+    single page application mein html css and js ke files toh ek hi bar aayegi but but but uske bad js control apne hat mein le lega like ab wahi sab chize control karegi without reloading pages and same page will be piopulated with the help of apis  
+}
+
+8. node module wala folder deni ki jarurat nahi hain npm install likhne se hi kam chal jata hain sari dependencies auto download ho jayeg
+
+{
+    Default export and named export 
+
+    module1.mjs
+
+    const a = "nigfgrwandfd"
+    const b = "preeti"
+    export default a;
+
+    module2.mjs
+
+    import ui from './module1.mjs'
+    console.log(ui)
+
+-> This was default exporting only one but if we want many
+
+
+9. Props
+ab humne navbar ko populated component kar diya matlab ki ab jaise hum navbar calll karegne woh aa jayega but but but kuch name muze chage karne hain to ab kya kiya jayeg
+using prps for textutils
+
+ab use ke liye navbar mein props pass kardo then  title -> props.title se replace kardo 
+then sirf title ko set kardo prop 
+similarlly hum about ko change kar sakte hain 
+
+10.Proptypes :- j0 huumare titles hain use kis datatype mein set karne hian uske liye hum Proptypes use karte hain like 
+
+pehle to ise import karlo
+like impt in navbar 
+then write syntax for the Proptypes
+
+Default Props is alos where :- jab hum values pass nahi karte toh default props ki values waha jati hain
+
+-> isRequired keyword is used for must send values of that parameteres
+
+~~~~~~#7
+->humne naya textform banaya from bootstrap and customize kiya like as we want 
+ab hume state banani  hain
+
+import {useState} this is hook from react then write syntax from react hoooks
+
+Hooks -> bina class banaye class ke feature use karen mein helpful hote hain 
+
+ab yaha hume text banaya and usme value aay "enter your text here" ab agar hume use update karna hain toh sirf function setText se hi update ho sakta hain 
+
+so humne ek function bayan handleUpClick and defined kiya but ek error aaya onchage
+-> onchange ke define kiya like      onChagnge = {handleonChange}
+
+-> #8 
+Dark mode 
+
+hum css ko dal sakte hian reactmein as a javascript style tag
+
+complete dark mode so hume sara control hai woh app.js mein chahiye so dark mode name ka ek use state banaya and then dark mode jaha jaha chahiye waha props ki help se dalta
+navbar mein humne `` use kiye takil js populate kar sake
+
+imrs to import react and useState
+
+ab toogledark ko adjust karne ke liliye humnbe ek template literat ki help se js likhi 
+
+
+-->
+Addding alert created new comoponent 
+and rfce using improted snippeit and then passed the message using props
+now created alert state in the app.js
+alert is one object and writing method of name setalert  
+and fucntion setAlert will set the alert message
+ 
+ show alert ek functioo show
+ hai which will help alert messages
+ then created show alert function and then give the message and type in the alert then pass {alert } int he app.js 
+ and then pass kiya toogledark mein
+ lekin ek error aaya ki cannot set property of null ab kare to kare kya
+ ek syntax hain dhayn rakhna 
+
+ props.alert && ise hoga ki aga ye null hain toh dikho mat and agar niahi hain to hdikhao 
+ lekin props.alert.type pass karke humne color badle and then success ko capital karna hain to ..ek fucntion banaya
+
+ #favicon ab favicon lane ke liye ek png file ko name do and public folder mein sent karke sabko name replace kardo ho gaya
+
+ -> ab agar title change karna hian alga alag components ke liye toh 
+
+ -> set Interval is used to pop up certain thing again and again
+
+
+ -> React Router ka Setup
+ The basic idea is to bring the entire page instead of that required data we should bring only that data is the concept behind this like youtube 
+
+ steps :-
+ 
+ search React Router Dom  
+ copy router then switch and customize accorginly
+ then ab router mein switch ko close karo 
+ and one warning switch hain na woh outdata ho gaya hian so old version of react-router-dom install karo 
+
+ now click karte hi jana chahiye uske liye kya kare
+ link too use karo
+ ab HTML mein a to Link and to se replace kardo
+ and router mein exact use karo to match exact
+ why
+ /users
+ /users/home
+
+ ab users mara toh possiblity hain ki react users mein render ho jayega so exact matching is important
+
+ ->>
+ Ab ise deploy karte hai so
+ write deployment of create react app on the net
+
+npm run build run karo pehle toh
+aur ye gh pages mein router thik se kam nahi karta so hum about page ko remove kar denge
+
+
+-~~~~~~~~~~~~~~~~
+
+#New Module :-
+React class based components
+
+type rcc in the app.js to bring the snippit for the class based componenets
+
+toh newsmonkey app mein component structure dete hain
+
+hr is the empty tag so replace it by
+<hr> -- </hr>
+
+then crated new components like news and newsItem 
+then used a news api key to request the news
+news api key mein sample reponse ke use ki 
+usme ek file crate ki sampleresponse.json
+
+
+ab top headline ke endpoints mein se
+humne sirf cricket ka le liya
+like search 
+https://newsapi.org/v2/top-headlines?apiKey=ddc1426c15ca42d3912775d96024176a&q=cricket
+
+now used the card from the bootstrap in the newsItem 
+then use the syntax for the title and the description using props
+ab meinkuch kuhc aur props pass kiyle like image url and url 
+now we have to use constructor
+
+but to use constructor we have to call super();
+
+ab loopping se url ko hum iterate karnege
+jo this.articles mein save hain
+
+ab toh humne artice ko directly populate kiya but
+ab using api key we have to populate it 
+so for it use
+
+componentDidMount()
+{
+    isme hume async await ka use karke api ko fetch kiya
+}
+yaha error aaya ki cannot slice null ab sare parameter must nahi hain toh kuch null ho sakte hain for that  hum js likni hogi 
+toh uske liye ek ternary operator likhna hoga 
+ab agar news item bhi null ho gaya toh kya karnege
+ek default url use karenge 
